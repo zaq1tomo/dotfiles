@@ -1,0 +1,12 @@
+[user]
+	name = zaq1tomo
+	email = zaq1tomo@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[ghq]
+	root = ~/Develop/src

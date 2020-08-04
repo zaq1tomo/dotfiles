@@ -1,0 +1,21 @@
+alias c='clear'
+
+# ed
+alias v='vim'
+alias e='emacs'
+
+# dir
+alias dc='cd -'
+alias ..='cd ..'
+alias ...='..;..'
+
+# ls
+alias l='ls'
+alias la='l -a'
+alias ll='l -al'
+
+# git
+alias gg='ghq get'
+alias gs='git status'
+alias gb='git branch'
+alias gc='git switch'
