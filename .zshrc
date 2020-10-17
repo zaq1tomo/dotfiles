@@ -56,10 +56,22 @@ export GOPATH="$HOME/Develop"
 export PATH="$GOPATH/bin:$PATH"
 
 # node
+export PATH="$HOME/.nodenv/bin:$PATH"
+if command -v nodenv 1>/dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
 export PATH="$HOME/.npm-global/bin:$PATH"
+
+# python
+export PATH="$HOME/.pyenv/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 # flutter
 export PATH="$HOME/Develop/flutter/bin:$PATH"
+export PATH="$HOME/Develop/flutter/bin/cache/dart-sdk/bin:$PATH"
+export PATH="$HOME/.pub-cache/bin:$PATH"
 
 # gcp
 # The next line updates PATH for the Google Cloud SDK.
