@@ -55,6 +55,12 @@ eval "$(direnv hook zsh)"
 export GOPATH="$HOME/Develop"
 export PATH="$GOPATH/bin:$PATH"
 
+export PATH="$HOME/.goenv/bin:$PATH"
+export GOENV_GOPATH_PREFIX="$HOME/Develop/go"
+if command -v goenv 1>/dev/null 2>&1; then
+	eval "$(goenv init -)"
+fi
+
 # node
 export PATH="$HOME/.nodenv/bin:$PATH"
 if command -v nodenv 1>/dev/null 2>&1; then
